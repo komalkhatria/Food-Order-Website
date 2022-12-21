@@ -26,9 +26,9 @@
 </head>
 <body>
 
-        <!-- header section starts -->
-
-        <!-- header section ends -->
+    <!-- header section starts -->
+    <?php include ('user_header.php') ?>
+    <!-- header section ends -->
 
 
 
