@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!-- custom css file link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="1style.css">
+
+    
 </head>
 <body>
-
     <!-- header section starts -->
     <?php include ('user_header.php') ?>
     <!-- header section ends -->
@@ -34,8 +35,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts -->
+    <?php include ('footer.php') ?>
+    <!-- footer section ends -->
+
+    
     <!-- custom js file link -->
-    <script src="js/script.js"></script>
+    <script src="1script.js"></script>
+
+
 
 </body>
 </html>

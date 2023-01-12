@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --yellow: #fed330;
+    --red: #e74c3c;
+    --white: #fff;
+    --black: #222;
+    --light-color: #777;
+    --border: .2rem solid var(--black);
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+*::selection{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: none;
+ }
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--yellow);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.btn,
+.delete-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.btn{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.delete-btn{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.btn:hover,
+.delete-btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    position: sticky;
+    z-index: 1000;
+    background-color: var(--white);
+    border-bottom: var(--border);
+    top: 0; left: 0;
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .flex .navbar a{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .flex .navbar a:hover{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+.header .flex .icons > *{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.header .flex .icons span{
+    font-size: 2rem;
+}
+
+.header .flex .icons > *:hover{
+    color: var(--yellow);
+}
+
+.header .flex .profile{
+    position: absolute;
+    top:120%; right:2rem;
+    border: var(--border);
+    background-color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    width: 30rem;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: translateY(1rem);
+    }
+}
+
+.header .flex .profile.active{
+    display: inline-block;
+}
+
+.header .flex .profile .name{
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.footer .grid .box{
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer .grid .box img{
+    height: 15rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.footer .grid .box h3{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.footer .grid .box p,
+.footer .grid .box a{
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 2;
+    display: block;
+}
+
+.footer .grid .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit{
+    background-color: var(--black);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.footer .credit span{
+    color: var(--yellow);
+}
+
+
+/* media queries */
+
+@media(max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top: 99%; left:0; right:0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        background-color: var(--white);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a{
+        margin: 2rem;
+        display: block;
+    }
+    
+}
+
+@media(max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header .flex .logo{
+        font-size: 2rem;
+    }
+}
