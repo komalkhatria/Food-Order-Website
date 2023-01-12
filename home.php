@@ -12,6 +12,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -22,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <!-- custom css file link -->
-    <link rel="stylesheet" type="text/css" href="1style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     
 </head>
@@ -55,7 +56,7 @@
 
     
     <!-- custom js file link -->
-    <script src="1script.js"></script>
+    <script src="script.js"></script>
 
 
 
