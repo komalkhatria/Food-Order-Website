@@ -32,6 +32,10 @@
     <?php include ('user_header.php') ?>
     <!-- header section ends -->
 
+    <!-- home section starts -->
+
+    <!-- home section ends -->
+
 
 
 
