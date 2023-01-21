@@ -83,6 +83,40 @@
     </section>
     <!-- home section ends -->
 
+    <!-- home category section starts -->
+    <section class="home-category">
+
+        <h1 class="title">food category</h1>
+
+        <div class="box-container">
+
+            <a href="category.php?category=breakfast" class="box">
+                <img src="images/poha.jpg" alt="">
+                <h3>breakfast</h3>
+            </a>
+
+            <a href="category.php?category=mains" class="box">
+                <img src="images/paneer-rice-paratha.jpg" alt="">
+                <h3>mains</h3>
+            </a>
+
+            <a href="category.php?category=specials" class="box">
+                <img src="images/pavbhaji.jpg" alt="">
+                <h3>specials</h3>
+            </a>
+
+            <a href="category.php?category=desserts" class="box">
+                <img src="images/suji-halwa.jpg" alt="">
+                <h3>desserts</h3>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- home category section starts -->
+
+
+
 
 
 
